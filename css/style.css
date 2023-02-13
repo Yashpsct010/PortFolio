@@ -21,10 +21,10 @@ html{scroll-behavior:smooth}
 }
 
 .header_area .main-menu .nav-item .nav-link{
-    font: normal 500 15px/2px var(--roboto);
+    font: normal bold 500 20px/2px var(--roboto);
     text-transform: uppercase;
     padding: 1.7rem;
-    color: orange;
+    color: rgb(59, 5, 80);
 }
 
 .header_area .main-menu .navbar-nav .active a{
@@ -76,7 +76,7 @@ html{scroll-behavior:smooth}
 }
 
 .background-img{
-  background-image: url('/PortFolio/img/bg-img.jpg');
+  background-image: url('/img/bg-img.jpg');
   background-size: cover;
   background-position: center;
   height: 100vh;
