@@ -16,8 +16,13 @@ html{scroll-behavior:smooth}
     padding: 0 2rem 0 5rem;
 }
 
+body{
+    background-color: rgb(102, 109, 242);
+}
+
 .header_area .main-menu .navbar{
     padding: 1rem 20rem ;
+    background-color: yellow;
 }
 
 .header_area .main-menu .nav-item .nav-link{
