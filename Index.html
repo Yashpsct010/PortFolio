@@ -150,20 +150,10 @@
         <h2 class="section-title">Work</h2>
 
         <div class="work__container bd-grid">
-          <!-- <div class="work__overlay">
-            <p class="work__title"> Portfolio </p>
+          <a href="https://yash-parmar-portfolio.netlify.app/" target="_blank" class="work__img">
             <img src="assets/img/work1.jpg" alt="" />
-          </div> -->
-          <img src="assets/img/work1.jpg" alt="" class="image">
-          <div class="middle">
-            <div class="text">Portfolio</div>
-            <div class="button1"><a href="https://github.com/Yashpsct010/PortFolio"> Github </a></div>
-            <div class="button2"><a href="https://yash-parmar-portfolio.netlify.app"> Site </a></div>
-          </div>
-          <!-- <a href="https://yash-parmar-portfolio.netlify.app" class="work__img">
-            <img src="assets/img/work1.jpg" alt="" />
-          </a> -->
-          <!-- <a href="" class="work__img">
+          </a>
+          <a href="https://github.com/Yashpsct010/rentmanagementsystem" target="_blank" class="work__img">
             <img src="assets/img/work2.jpg" alt="" />
           </a>
           <a href="" class="work__img">
@@ -177,7 +167,7 @@
           </a>
           <a href="" class="work__img">
             <img src="assets/img/work6.jpg" alt="" />
-          </a> -->
+          </a>
         </div>
       </section>
 
@@ -186,18 +176,19 @@
         <h2 class="section-title">Contact</h2>
 
         <div class="contact__container bd-grid">
-          <form action="" class="contact__form">
+          <form action="/assets/form/form.php" method="post" class="contact__form">
             <input type="text" placeholder="Name" class="contact__input" />
-            <input type="mail" placeholder="Email" class="contact__input" />
+            <input type="email" placeholder="Email" class="contact__input" />
             <textarea
               name=""
               id=""
               cols="0"
               rows="10"
+              placeholder="Contact Details ..."
               class="contact__input"
             ></textarea>
             <input
-              type="button"
+              type="submit"
               value="send"
               class="contact__button button"
             />

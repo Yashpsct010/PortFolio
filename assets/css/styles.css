@@ -397,81 +397,12 @@ img {
   overflow: hidden;
 }
 
-/* .work__img img {
+.work__img img {
   transition: 1s;
-} */
+}
 
-/* .work__img img:hover {
+.work__img img:hover {
   transform: scale(1.1);
-} */
-
-
-
-.work__container:hover .work__overlay {
-  display: block;
-  background: rgba(0, 0, 0, .3);
-}
-
-.work__title {
-  position: absolute;
-  width: 500px;
-  left: 0;
-  top: 120px;
-  font-weight: 700;
-  font-size: 30px;
-  text-align: center;
-  text-transform: uppercase;
-  color: white;
-  z-index: 1;
-  transition: top .5s ease;
-}
-
-.work__container:hover .work__title {
-  top: 90px;
-}
-
-.button1 {
-  position: absolute;
-  width: 500px;
-  left:0;
-  top: 180px;
-  text-align: center;
-  opacity: 0;
-  transition: opacity .35s ease;
-}
-
-.button1 a {
-  width: 200px;
-  padding: 12px 48px;
-  text-align: center;
-  color: white;
-  border: solid 2px white;
-  z-index: 1;
-}
-.button2 {
-  position: absolute;
-  width: 500px;
-  left:0;
-  top: 180px;
-  text-align: center;
-  opacity: 0;
-  transition: opacity .35s ease;
-}
-
-.button2 a {
-  width: 200px;
-  padding: 12px 48px;
-  text-align: center;
-  color: white;
-  border: solid 2px white;
-  z-index: 1;
-}
-
-.work__container:hover .button1 {
-  opacity: 1;
-}
-.work__container:hover .button2 {
-  opacity: 1;
 }
 
 /* ===== CONTACT =====*/
