@@ -176,12 +176,11 @@
         <h2 class="section-title">Contact</h2>
 
         <div class="contact__container bd-grid">
-          <form action="/assets/form/form.php" method="post" class="contact__form">
-            <input type="text" placeholder="Name" class="contact__input" />
-            <input type="email" placeholder="Email" class="contact__input" />
+          <form onsubmit="sendEmail()"; reset(); return false; class="contact__form">
+            <input type="text" id="name" placeholder="Name" class="contact__input" />
+            <input type="email" id="email" placeholder="Email" class="contact__input" />
             <textarea
-              name=""
-              id=""
+              id="msg"
               cols="0"
               rows="10"
               placeholder="Contact Details ..."
@@ -194,6 +193,22 @@
             />
           </form>
         </div>
+        <script src="https://smtpjs.com/v3/smtp.js"></script>
+        <script>
+          function sendEmail(){
+            Email.send({
+              SecureToken:"bb60c901-8bd5-43a3-a3a9-f76097fe37c8",
+              To : 'yash-parmar-portfolio.netlify.app',
+              From : document.getElementById("email").value,
+              Subject : "Wants to Connect ",
+              Body : "Name: " + document.getElementById("name").value + 
+              "<br> Email : " + document.getElementById("email").value +
+              "<br> Message : " + document.getElementById("msg").value
+            }).then(
+            message => alert("Message sent Successfully!!")
+          );
+          }
+        </script>
       </section>
     </main>
 
